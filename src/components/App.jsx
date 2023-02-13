@@ -1,7 +1,9 @@
 import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
+import { FriendList } from 'components/Friendlist/Friendlist';
 import user from 'user.json'; 
 import data from 'data.json';
+import friends from 'friends.json';
 
 export const App = () => {
   return (
@@ -17,12 +19,13 @@ export const App = () => {
       likes={user.stats.likes}
       />
       <Statistics 
-      key={data.id}
       title="Upload stats"
       stats={data}
-      label={data.label}
-      percentage={data.percentage}
       />
+
+      <FriendList
+      friends={friends}
+      /> 
     </div>
   );
 };

@@ -1,32 +1,14 @@
-h1,
-h2,
-p {
-    margin: 0;
-}
-.avatar {
-    display: block;
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    border: 1px solid black;
-    margin: 0 auto 20px auto;
-}
-ul,
-ol {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-}
+import styled from '@emotion/styled';
 
-.profile {
+export const ProfileStyle = styled.div`
     background-color: rgb(239, 236, 236);
     width: 300px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 50px;
     padding-bottom: 50px;
-}
-.description {
+`;
+export const Description = styled.div`
     background-color:white;
     padding-top: 20px;
     margin-left: auto;
@@ -36,23 +18,35 @@ ol {
     border: 1px solid grey;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.name {
+`;
+export const Name = styled.p`
     font-family: inherit;
     font-weight: 700;
     text-align: center;
     margin-bottom: 10px;
-}
-.tag {
+`;
+
+export const Tag = styled.p`
     text-align: center;
     margin-bottom: 10px;
     color: rgb(174, 173, 173);
-}
-.location {
+`;
+
+export const Location = styled.p`
     text-align: center;
     color: rgb(174, 173, 173);
-}
-.stats {
+`;
+
+export const Avatar = styled.img`
+    display: block;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 0 auto 20px auto;
+`;
+
+export const StatsStyle = styled.ul`
     display: flex;
     gap: 0;
     width: 300px;
@@ -61,19 +55,19 @@ ol {
     text-align: center;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-   
-}
-.item {
+`;
+export const ItemStyle = styled.li`
     display: flex;
     flex-direction: column;
     flex-basis: calc((100% - 0px) / 3);
     padding: 15px;
     border: 1px solid grey;
-}
-.label {
+`;
+export const LabelStyle = styled.span`
     margin-bottom: 5px;
     color: rgb(95, 97, 99);
-}
-.quantity {
+`;
+export const QuantityStyle = styled.span`
     font-weight: 700;
-}
+`;
+

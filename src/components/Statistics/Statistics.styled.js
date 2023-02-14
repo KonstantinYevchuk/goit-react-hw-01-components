@@ -1,42 +1,38 @@
-h1,
-h2,
-p,
-ul,
-ol {
-    margin: 0;
-    padding: 0;
-}
-.statistics {
+import styled from '@emotion/styled';
+
+export const Section = styled.section`
     width: 400px;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
     margin: 0 auto;
-}
-.title {
+`;
+
+export const Title = styled.h2`
     margin: 0 auto;
     padding: 30px 0;
     width: 100%;
     background-color: white;
-}
-.stat-list{
+`;
+
+export const List = styled.ul`
     display: flex;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-}
-.item {
+`;
+export const Item = styled.li`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-basis: calc((100% - 0px) / 5);
     padding: 15px;
     border: 1px solid gray;
-}
-.label {
-    margin-bottom: 5px;
-}
-.percentage {
     color: white;
+`;
+export const Label = styled.span`
+    margin-bottom: 5px;
+`;
+export const Percent = styled.span`
     font-size: 20px;
-}
+`;

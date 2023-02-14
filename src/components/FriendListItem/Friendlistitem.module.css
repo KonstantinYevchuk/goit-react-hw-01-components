@@ -15,4 +15,17 @@
 .avatar {
     margin-right: 10px;
 }
+
+.status {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    border-radius: 50%;
     
+}
+.true {
+    background-color: rgb(4, 236, 4);
+}
+.false {
+    background-color: rgb(213, 7, 7);
+}

@@ -1,5 +1,11 @@
 import styled from '@emotion/styled';
 
+function getRandomHexColor() {
+    return `#${Math.floor(Math.random() * 16777215)
+      .toString(16)
+      .padStart(6, 0)}`;
+  };
+
 export const Section = styled.section`
     width: 400px;
     padding-top: 50px;
@@ -29,6 +35,7 @@ export const Item = styled.li`
     padding: 15px;
     border: 1px solid gray;
     color: white;
+    background-color: ${getRandomHexColor}aa;
 `;
 export const Label = styled.span`
     margin-bottom: 5px;
